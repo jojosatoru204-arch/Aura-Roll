@@ -1,21 +1,22 @@
 # AURA ROLL — KAISX STUDIO
 
-A 3D Three.js vertical-slice prototype packaged for Android with Capacitor.
+A mobile-ready Three.js 3D vertical-slice prototype packaged with Capacitor.
 
-## Build locally
-- Node.js 22
+## Gameplay
+- Explore the Spawn Plaza with WASD / arrow keys.
+- Drag the world to orbit the camera.
+- Discover cosmetic auras and collect them locally on the device.
+- Aura discoveries use free in-game random rewards only; there are no purchases, cash bets, or cash-out.
+
+## Local build
+Use Node.js 22, then run:
 - npm install
 - npm run build
 - npx cap add android
 - npx cap sync android
 
-## Gameplay
-- Move with WASD / arrow keys.
-- Drag the world to orbit the camera; pinch/scroll to zoom.
-- Discover cosmetic auras using the in-game free discovery button.
-- Collection is saved locally on the device.
+## Android APK
+GitHub Actions builds a debug APK on pushes to main. Open the Actions tab and download the artifact named AURA-ROLL-Android-APK after the workflow succeeds.
 
-This prototype uses only non-purchasable in-game discovery. It has no real-money bets, purchases, cash-out, multiplayer backend, or server-authoritative random system.
-
-## Android build
-GitHub Actions builds a debug APK and uploads it as an artifact on each push to main.
+## Prototype limitations
+This is Phase 0 only. It does not include online multiplayer, accounts, cloud saves, secure server-side randomness, or the full production content catalogue.
