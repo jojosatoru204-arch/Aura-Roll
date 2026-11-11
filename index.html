@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#172c32">
+  <meta name="description" content="AURA ROLL — Discover the impossible.">
+  <title>AURA ROLL — KAISX STUDIO</title>
+</head>
+<body>
+  <canvas id="world"></canvas>
+  <div class="vignette"></div>
+  <header class="topbar">
+    <div class="brand"><span class="mark">A</span><span><b>AURA ROLL</b><small>KAISX STUDIO</small></span></div>
+    <div class="wallet"><small>DISCOVERIES</small><b id="count">0</b></div>
+  </header>
+  <div class="location"><small>WORLD / 001</small><b>SPAWN PLAZA</b><span>A new world awaits</span></div>
+  <nav class="menu">
+    <button class="active" data-tab="collection">COLLECTION</button>
+    <button data-tab="index">AURA INDEX</button>
+  </nav>
+  <section class="roll-zone">
+    <div id="status">READY TO DISCOVER</div>
+    <button id="roll"><b>DISCOVER</b><small>REVEAL A NEW AURA</small></button>
+    <div class="hint">DRAG TO ORBIT · MOVE WITH WASD</div>
+  </section>
+  <section id="reveal" class="reveal hidden">
+    <small>NEW DISCOVERY</small><div id="symbol">✦</div><b id="rarity">COMMON</b><h1 id="auraName">Quiet Spark</h1><span id="odds">AURA TIER 01</span>
+    <button id="closeReveal">CONTINUE</button>
+  </section>
+  <aside id="drawer" class="drawer hidden">
+    <button id="closeDrawer" class="close">×</button><small>KAISX STUDIO / ARCHIVE</small><h2 id="drawerTitle">Collection</h2><div id="drawerBody"></div>
+  </aside>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
